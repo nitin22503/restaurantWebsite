@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book a table | Hungry hunter</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/reserve.css" />
+    <!-- <link rel="stylesheet" href="css/contact.css" /> -->
+    <!-- Font awesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Google Fonts links -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,400;0,600;1,300;1,400;1,600&family=Muli:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playball&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header section -->
+      <div class="hamburger-menu">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+        <span>Close</span>
+      </div>
+      <header class="header">
+        <div class="img-wrapper">
+          <!-- <img src="images/reserve-bg.jpg" /> -->
+        </div>
+        <div class="banner">
+          <img src="images/hungryHunterLogo.png" alt="Hungry Hunter Logo" />
+          <h1>Book A Table</h1>
+
+          <p>We Hunt the Hunger</p>
+          <!-- <button>Order Now</button> -->
+        </div>
+      </header>
+      <!-- SIDE NAVBAR -->
+      <section class="sidebar">
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="index.html" class="menu-link" data-content="Home">Home</a>
+          </li>
+          <li class="menu-item">
+            <a href="menu.html" class="menu-link" data-content="Menu">Menu</a>
+          </li>
+          <li class="menu-item">
+            <a href="ourstory.html" class="menu-link" data-content="Our Story"
+              >Our Story</a
+            >
+          </li>
+          <li class="menu-item">
+            <a href="contact.html" class="menu-link" data-content="Contact Us"
+              >Contact Us</a
+            >
+          </li>
+          <li class="menu-item">
+            <a
+              href="reservation.html"
+              class="menu-link"
+              data-content="Book A Table"
+              >Book A Table</a
+            >
+          </li>
+        </ul>
+        <div class="social-media">
+          <a href="#"><i class="fa fa-facebook-f"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+      </section>
+      <section class="main-form-section">
+        <div class="form-wrapper">
+          <div class="reserve-heading-div">
+            <h1>Reservation</h1>
+          </div>
+          <form action="" class="grid-container">
+            <div class="input-group">
+              <input
+                type="text"
+                name=""
+                id=""
+                class="field"
+                placeholder="Full Name"
+              />
+            </div>
+            <div class="input-group">
+              <input
+                type="email"
+                name=""
+                id=""
+                class="field"
+                placeholder="Email ID"
+              />
+            </div>
+            <div class="input-group">
+              <input
+                type="tel"
+                name=""
+                id=""
+                class="field"
+                placeholder="Contact No."
+              />
+            </div>
+            <div class="input-group">
+              <input
+                type="number"
+                name=""
+                id=""
+                class="field"
+                placeholder="No of Persons"
+              />
+            </div>
+            <div class="input-group">
+              <input
+                type="time"
+                name=""
+                id=""
+                class="field"
+                placeholder="Time"
+              />
+            </div>
+            <div class="input-group">
+              <input
+                type="date"
+                name=""
+                id=""
+                class="field"
+                placeholder="Date"
+              />
+            </div>
+            <div class="input-group">
+              <button class="submit-button state-0" type="button">
+                <span class="pre-state-msg">Book Now</span
+                ><span class="current-state-msg hide">Requesting...</span
+                ><span class="done-state-msg hide">Done!</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer-content">
+          <p class="copyright">
+            Copyright &copy; 2020,Hungry Hunter - All Rights Reserved
+          </p>
+          <div class="social-list">
+            <a href="#"><i class="fa fa-facebook-f ficon"></i></a>
+            <a href="#"><i class="fa fa-instagram ficon"></i></a>
+            <a href="#"><i class="fa fa-twitter ficon"></i></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      document
+        .querySelector(".hamburger-menu")
+        .addEventListener("click", () => {
+          document.querySelector(".container").classList.toggle("change");
+        });
+      // BOOK NOW BUTTON
+      const button = document.querySelector(".submit-button"),
+        stateMsg = document.querySelector(".pre-state-msg");
+
+      const updateButtonMsg = function () {
+        button.classList.add("state-1", "animated");
+
+        setTimeout(finalButtonMsg, 2000);
+      };
+
+      const finalButtonMsg = function () {
+        button.classList.add("state-2");
+
+        setTimeout(setInitialButtonState, 2000);
+      };
+
+      const setInitialButtonState = function () {
+        button.classList.remove("state-1", "state-2", "animated");
+      };
+
+      button.addEventListener("click", updateButtonMsg);
+    </script>
+  </body>
+</html>

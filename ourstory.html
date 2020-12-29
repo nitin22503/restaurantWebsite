@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu | Hungry Hunter</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="css/ourstory.css" />
+    <!-- AOs library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Font awesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Google Fonts links -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,400;0,600;1,300;1,400;1,600&family=Muli:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playball&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Animate css link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header section -->
+      <div class="hamburger-menu">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+        <span>Close</span>
+      </div>
+      <header class="header">
+        <div class="img-wrapper"></div>
+        <div class="banner">
+          <img src="images/hungryHunterLogo.png" alt="Hungry Hunter Logo" />
+          <h1>Our Story</h1>
+
+          <p>We Hunt the Hunger</p>
+        </div>
+      </header>
+      <!-- SIDE NAVBAR -->
+      <section class="sidebar">
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="index.html" class="menu-link" data-content="Home">Home</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link" data-content="Menu">Menu</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link" data-content="Our Story">Our Story</a>
+          </li>
+          <li class="menu-item">
+            <a href="contact.html" class="menu-link" data-content="Contact Us"
+              >Contact Us</a
+            >
+          </li>
+          <li class="menu-item">
+            <a
+              href="reservation.html"
+              class="menu-link"
+              data-content="Book A Table"
+              >Book A Table</a
+            >
+          </li>
+        </ul>
+        <div class="social-media">
+          <a href="#"><i class="fa fa-facebook-f"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+      </section>
+      <section class="our-story">
+        <div class="heading-div">
+          <h1>Our Story</h1>
+        </div>
+        <div class="content-div first-div" data-aos="fade-right">
+          <div class="img1 com-class">
+            <img src="images/our-story-img1.jpg" alt="Street" />
+          </div>
+          <div class="story">
+            <p>
+              "I with my father opened Hungry Hunter in June 2005 after we
+              travelled to diffrent states in India and fell in love with the
+              food."
+            </p>
+          </div>
+        </div>
+        <div class="content-div sec-div" data-aos="fade-left">
+          <div class="img-1 com-class">
+            <img src="images/our-story-img2.jpg" alt="family dinner" />
+          </div>
+          <div class="story">
+            <p>
+              "We made the decision to start a restaurant serving food while sat
+              on high stools, and talking with my father."
+            </p>
+          </div>
+          <div class="com-class img-3">
+            <img src="images/our-story-img3.jpg" alt="shop" />
+          </div>
+        </div>
+        <div class="content-div third-div" data-aos="fade-right">
+          <div
+            class="com-class"
+            style="background-color: rgba(180, 174, 167, 0.662)"
+          >
+            <img src="images/hungryHunterLogo.png" alt="logo" />
+          </div>
+          <div class="story">
+            <p>
+              "15 years later, Hungry Hunter is still a family-run business
+              serving great value, healthy Indian street food that is cooked
+              fresh daily."
+            </p>
+          </div>
+          <div class="com-class img-3">
+            <img
+              src="images/pexels-daria-shevtsova-3626606.jpg"
+              alt="Fried rice"
+            />
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer-content">
+          <p class="copyright">
+            Copyright &copy; 2020,Hungry Hunter - All Rights Reserved
+          </p>
+          <div class="social-list">
+            <a href="#"><i class="fa fa-facebook-f ficon"></i></a>
+            <a href="#"><i class="fa fa-instagram ficon"></i></a>
+            <a href="#"><i class="fa fa-twitter ficon"></i></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        disable: "mobile",
+        offset: 200,
+        duration: 700,
+      });
+      // hamburger menu trigger
+      document
+        .querySelector(".hamburger-menu")
+        .addEventListener("click", () => {
+          document.querySelector(".container").classList.toggle("change");
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu | Hungry Hunter</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="css/menu.css" />
+    <!-- Swipper css -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- Font awesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Google Fonts links -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,400;0,600;1,300;1,400;1,600&family=Muli:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playball&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Animate css link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header section -->
+      <div class="hamburger-menu">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+        <span>Close</span>
+      </div>
+      <header class="header">
+        <div class="img-wrapper"></div>
+        <div class="banner">
+          <img src="images/hungryHunterLogo.png" alt="Hungry Hunter Logo" />
+          <h1>Our Menu</h1>
+
+          <p>We Hunt the Hunger</p>
+        </div>
+      </header>
+      <!-- SIDE NAVBAR -->
+      <section class="sidebar">
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="index.html" class="menu-link" data-content="Home">Home</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link" data-content="Menu">Menu</a>
+          </li>
+          <li class="menu-item">
+            <a href="ourstory.html" class="menu-link" data-content="Our Story"
+              >Our Story</a
+            >
+          </li>
+          <li class="menu-item">
+            <a href="contact.html" class="menu-link" data-content="Contact Us"
+              >Contact Us</a
+            >
+          </li>
+          <li class="menu-item">
+            <a
+              href="reservation.html"
+              class="menu-link"
+              data-content="Book A Table"
+              >Book A Table</a
+            >
+          </li>
+        </ul>
+        <div class="social-media">
+          <a href="#"><i class="fa fa-facebook-f"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+      </section>
+      <section class="menu-section">
+        <div class="menu-wrapper">
+          <div class="menu-heading-div">
+            <h1>Delicious Food</h1>
+          </div>
+          <div class="food-wrapper">
+            <div class="type-of-food">
+              <h2>Apetizers</h2>
+              <button id="toggleBtn0">
+                <i class="fa fa-angle-up"></i>
+              </button>
+            </div>
+            <div class="foods" id="foods0">
+              <div class="face">
+                <div class="top-content">
+                  <img src="images/heart.png" alt="Heart" class="top-icons" />
+                </div>
+                <div class="ing-content">
+                  <h3>Crispy Onion Rings</h3>
+
+                  <img src="images/onionrings.png" alt="Onion Rings" />
+                  <div class="pq-content">
+                    <span class="price">$5.60</span>
+                  </div>
+                </div>
+                <div class="description">
+                  <h4>Description</h4>
+                  <p>
+                    Deep fried vidalia onion rings served with a tangy dipping
+                    sauce
+                  </p>
+                </div>
+              </div>
+              <!-- Second Item -->
+              <div class="face">
+                <div class="top-content">
+                  <img src="images/heart.png" alt="Heart" class="top-icons" />
+                </div>
+                <div class="ing-content">
+                  <h3>Thai Spring Rolls</h3>
+
+                  <img src="images/springrolls.png" alt="Spring Rolls" />
+                  <div class="pq-content">
+                    <span class="price">$7.30</span>
+                  </div>
+                </div>
+                <div class="description">
+                  <h4>Description</h4>
+                  <p>
+                    Crispy Thai spring rolls filled with vegetables and served
+                    with sweet and sour dipping sauce
+                  </p>
+                </div>
+              </div>
+              <!-- third item -->
+              <div class="face">
+                <div class="top-content">
+                  <img src="images/heart.png" alt="Heart" class="top-icons" />
+                </div>
+                <div class="ing-content">
+                  <h3>Air Fryer Stuffed Mushrooms</h3>
+
+                  <img src="images/mashroom.png" alt="mashroom" />
+                  <div class="pq-content">
+                    <span class="price">$6.00</span>
+                  </div>
+                </div>
+                <div class="description">
+                  <h4>Description</h4>
+                  <p>
+                    They make the perfect game-day snack, but also impress as a
+                    first course when having friends over for an elegant dinner.
+                  </p>
+                </div>
+              </div>
+              <!-- third item ends -->
+            </div>
+          </div>
+          <!-- SOUPS -->
+          <div class="food-wrapper">
+            <div class="type-of-food">
+              <h2>Soups</h2>
+              <button id="toggleBtn1">
+                <i class="fa fa-angle-up"></i>
+              </button>
+            </div>
+            <div class="foods" id="foods1">
+              <div class="face">
+                <div class="top-content">
+                  <img src="images/heart.png" alt="Heart" class="top-icons" />
+                </div>
+                <div class="ing-content">
+                  <h3>Cream of Wild Mushroom</h3>
+
+                  <img src="images/mushroomsoup.png" alt="mushroom soup" />
+                  <div class="pq-content" style="margin-top: 1rem">
+                    <span class="price">$4.00</span>
+                  </div>
+                </div>
+                <div class="description">
+                  <h4>Description</h4>
+                  <p>A bowl of our house special creamy mushroom soup</p>
+                </div>
+              </div>
+              <!-- Second Item -->
+              <div class="face">
+                <div class="top-content">
+                  <img src="images/heart.png" alt="Heart" class="top-icons" />
+                </div>
+                <div class="ing-content">
+                  <h3>Chicken Noodle soup</h3>
+
+                  <img src="images/chickensoup.jpg" alt="Chicken Soup" />
+                  <div class="pq-content">
+                    <span class="price">$4.30</span>
+                  </div>
+                </div>
+                <div class="description">
+                  <h4>Description</h4>
+                  <p>
+                    A bowl of our classic chicken noodle made from grandma's
+                    recipe
+                  </p>
+                </div>
+              </div>
+              <!-- third item -->
+              <div class="face">
+                <div class="top-content">
+                  <img src="images/heart.png" alt="Heart" class="top-icons" />
+                </div>
+                <div class="ing-content">
+                  <h3>Chilled Melon Soup</h3>
+
+                  <img src="images/melonsoup.png" alt="Melon Soup" />
+                  <div class="pq-content">
+                    <span class="price">$3.00</span>
+                  </div>
+                </div>
+                <div class="description">
+                  <h4>Description</h4>
+                  <p>
+                    Melon soup is a soup prepared with melon as a primary
+                    ingredient
+                  </p>
+                </div>
+              </div>
+              <!-- third item ends -->
+            </div>
+          </div>
+          <!-- soups end -->
+          <!-- salads Starts -->
+          <div class="food-wrapper">
+            <div class="type-of-food">
+              <h2>Salads</h2>
+              <button id="toggleBtn2">
+                <i class="fa fa-angle-up"></i>
+              </button>
+            </div>
+            <div class="foods" id="foods2">
+              <div class="face">
+                <div class="top-content">
+                  <img src="images/heart.png" alt="Heart" class="top-icons" />
+                </div>
+                <div class="ing-content">
+                  <h3>Classic Caesar Salad</h3>
+
+                  <img src="images/CaesarSalad.png" alt="Caesar Salad" />
+                  <div class="pq-content">
+                    <span class="price">$7.00</span>
+                  </div>
+                </div>
+                <div class="description">
+                  <h4>Description</h4>
+                  <p>
+                    Classic caesar served with our house made garlic croutons
+                  </p>
+                </div>
+              </div>
+              <!-- Second Item -->
+              <div class="face">
+                <div class="top-content">
+                  <img src="images/heart.png" alt="Heart" class="top-icons" />
+                </div>
+                <div class="ing-content">
+                  <h3>Cranberry Pecan Blue</h3>
+
+                  <img src="images/pecanblue.png" alt="Cranberry Pecan Blue" />
+                  <div class="pq-content" style="margin-top: 0rem">
+                    <span class="price">$8.00</span>
+                  </div>
+                </div>
+                <div class="description">
+                  <h4>Description</h4>
+                  <p>
+                    A mixed green salad toped with spiced pecans, blue cheese,
+                    and cranberries served with a balsamic vinaigrette
+                  </p>
+                </div>
+              </div>
+              <!-- third item -->
+              <div class="face">
+                <div class="top-content">
+                  <img src="images/heart.png" alt="Heart" class="top-icons" />
+                </div>
+                <div class="ing-content">
+                  <h3>Spinach Salad</h3>
+
+                  <img src="images/SpinachSalad.png" alt="Spinach Salad" />
+                  <div class="pq-content">
+                    <span class="price">$9.00</span>
+                  </div>
+                </div>
+                <div class="description">
+                  <h4>Description</h4>
+                  <p>Served with crumbled bacon and an orange vinaigrette</p>
+                </div>
+              </div>
+              <!-- third item ends -->
+            </div>
+          </div>
+          <!-- salads ends Here -->
+          <!-- sandwiches Starts -->
+          <div class="food-wrapper">
+            <div class="type-of-food">
+              <h2>Sandwiches</h2>
+              <button id="toggleBtn3">
+                <i class="fa fa-angle-up"></i>
+              </button>
+            </div>
+            <div class="foods" id="foods3">
+              <div class="face">
+                <div class="top-content">
+                  <img src="images/heart.png" alt="Heart" class="top-icons" />
+                </div>
+                <div class="ing-content">
+                  <h3>Roasted Turkey Club</h3>
+
+                  <img src="images/sandwich1.png" alt="sandwich" />
+                  <div class="pq-content" style="margin-top: 1rem">
+                    <span class="price">$9.00</span>
+                  </div>
+                </div>
+                <div class="description">
+                  <h4>Description</h4>
+                  <p>
+                    With bacon, cheddar, avocado, lettuce, and tomato. Served
+                    with chips
+                  </p>
+                </div>
+              </div>
+              <!-- Second Item -->
+              <div class="face">
+                <div class="top-content">
+                  <img src="images/heart.png" alt="Heart" class="top-icons" />
+                </div>
+                <div class="ing-content">
+                  <h3>Hot Italian Grinder</h3>
+
+                  <img src="images/sandwich3.png" alt="sandwich" />
+                  <div class="pq-content">
+                    <span class="price">$9.00</span>
+                  </div>
+                </div>
+                <div class="description">
+                  <h4>Description</h4>
+                  <p>
+                    Salami, ham, and provolone, oven toasted in a grinder roll
+                    and served with chips
+                  </p>
+                </div>
+              </div>
+              <!-- third item -->
+              <div class="face">
+                <div class="top-content">
+                  <img src="images/heart.png" alt="Heart" class="top-icons" />
+                </div>
+                <div class="ing-content">
+                  <h3>The BLT+AA</h3>
+
+                  <img src="images/sandwich2.png" alt="Sandwich" />
+                  <div class="pq-content">
+                    <span class="price">$7.00</span>
+                  </div>
+                </div>
+                <div class="description">
+                  <h4>Description</h4>
+                  <p>
+                    Classic BLT plus our twist of fresh avocado on toasted wheat
+                    bread.Served with chips
+                  </p>
+                </div>
+              </div>
+              <!-- third item ends -->
+            </div>
+          </div>
+          <!-- sandwiches ends Here -->
+          <!-- Burgers Starts -->
+          <div class="food-wrapper">
+            <div class="type-of-food">
+              <h2>Burgers</h2>
+              <button id="toggleBtn4">
+                <i class="fa fa-angle-up"></i>
+              </button>
+            </div>
+            <div class="foods" id="foods4">
+              <div class="face">
+                <div class="top-content">
+                  <img src="images/heart.png" alt="Heart" class="top-icons" />
+                </div>
+                <div class="ing-content">
+                  <h3>Classic Hamburger</h3>
+
+                  <img src="images/hamburger.png" alt="Hamburger" />
+                  <div class="pq-content">
+                    <span class="price">$10.00</span>
+                  </div>
+                </div>
+                <div class="description">
+                  <h4>Description</h4>
+                  <p>
+                    A half pound of flame broiled angus beef served with french
+                    fries
+                  </p>
+                </div>
+              </div>
+              <!-- Second Item -->
+              <div class="face">
+                <div class="top-content">
+                  <img src="images/heart.png" alt="Heart" class="top-icons" />
+                </div>
+                <div class="ing-content">
+                  <h3>Classic Cheese Burger</h3>
+
+                  <img src="images/cheeseburger.png" alt="Cheese Burger" />
+                  <div class="pq-content">
+                    <span class="price">$11.00</span>
+                  </div>
+                </div>
+                <div class="description">
+                  <h4>Description</h4>
+                  <p>
+                    A half pound of flame broiled angus beef topped with Cheddar
+                    and served with french fries
+                  </p>
+                </div>
+              </div>
+              <!-- third item -->
+              <div class="face">
+                <div class="top-content">
+                  <img src="images/heart.png" alt="Heart" class="top-icons" />
+                </div>
+                <div class="ing-content">
+                  <h3>the 'Work' Burger</h3>
+
+                  <img
+                    src="images/worksburger.png"
+                    alt="Work burger"
+                    style="height: 110px"
+                  />
+                  <div class="pq-content" style="margin-top: 1rem">
+                    <span class="price">$12.00</span>
+                  </div>
+                </div>
+                <div class="description">
+                  <h4>Description</h4>
+                  <p>
+                    A half pound of flame broiled angus beef, toped with
+                    cheddar, bacon, and mushrooms. Served with french fries
+                  </p>
+                </div>
+              </div>
+              <!-- third item ends -->
+            </div>
+          </div>
+          <!-- Burgers ends Here -->
+          <!-- Sides Starts -->
+          <div class="food-wrapper">
+            <div class="type-of-food">
+              <h2>Sides</h2>
+              <button id="toggleBtn5">
+                <i class="fa fa-angle-up"></i>
+              </button>
+            </div>
+            <div class="foods" id="foods5">
+              <div class="face">
+                <div class="top-content">
+                  <img src="images/heart.png" alt="Heart" class="top-icons" />
+                </div>
+                <div class="ing-content">
+                  <h3>French Fries</h3>
+
+                  <img src="images/frenchfries.png" alt="french Fries" />
+                  <div class="pq-content">
+                    <span class="price">$3.00</span>
+                  </div>
+                </div>
+                <div class="description">
+                  <h4>Description</h4>
+                  <p>
+                    Deep fried golden and delicious french fries with sauce.
+                  </p>
+                </div>
+              </div>
+              <!-- Second Item -->
+              <div class="face">
+                <div class="top-content">
+                  <img src="images/heart.png" alt="Heart" class="top-icons" />
+                </div>
+                <div class="ing-content">
+                  <h3>Corn on the Cobb</h3>
+
+                  <img src="images/corn.png" alt="Corn" />
+                  <div class="pq-content" style="margin-top: 4rem">
+                    <span class="price">$3.00</span>
+                  </div>
+                </div>
+                <div class="description">
+                  <h4>Description</h4>
+                  <p>
+                    Three grilled ears of sweet local corn with some more yummy
+                    food.
+                  </p>
+                </div>
+              </div>
+              <!-- third item -->
+              <div class="face">
+                <div class="top-content">
+                  <img src="images/heart.png" alt="Heart" class="top-icons" />
+                </div>
+                <div class="ing-content">
+                  <h3>Baked Beans</h3>
+
+                  <img src="images/bakedbeans.png" alt="Baked beans" />
+                  <div class="pq-content">
+                    <span class="price">$3.00</span>
+                  </div>
+                </div>
+                <div class="description">
+                  <h4>Description</h4>
+                  <p>Made with our secret house recipe with a secret taste</p>
+                </div>
+              </div>
+              <!-- third item ends -->
+            </div>
+          </div>
+          <!-- Sides ends Here -->
+          <!-- Drinks Starts -->
+          <div class="food-wrapper">
+            <div class="type-of-food">
+              <h2>Drinks</h2>
+              <button id="toggleBtn6">
+                <i class="fa fa-angle-up"></i>
+              </button>
+            </div>
+            <div class="foods" id="foods6">
+              <div class="face">
+                <div class="top-content">
+                  <img src="images/heart.png" alt="Heart" class="top-icons" />
+                </div>
+                <div class="ing-content">
+                  <h3>Orange Juice</h3>
+
+                  <img src="images/orangejuice.png" alt="Orange Juice" />
+                  <div class="pq-content">
+                    <span class="price">$2.00</span>
+                  </div>
+                </div>
+                <div class="description">
+                  <h4>Description</h4>
+                  <p>fresh orange juice to refresh the soul.</p>
+                </div>
+              </div>
+              <!-- Second Item -->
+              <div class="face">
+                <div class="top-content">
+                  <img src="images/heart.png" alt="Heart" class="top-icons" />
+                </div>
+                <div class="ing-content">
+                  <h3>Watermelon Juice</h3>
+
+                  <img src="images/watermelon.png" alt="Watermelon Juice" />
+                  <div class="pq-content">
+                    <span class="price">$3.00</span>
+                  </div>
+                </div>
+                <div class="description">
+                  <h4>Description</h4>
+                  <p>Watermelon juice for totally refreshing life.</p>
+                </div>
+              </div>
+              <!-- third item -->
+              <div class="face">
+                <div class="top-content">
+                  <img src="images/heart.png" alt="Heart" class="top-icons" />
+                </div>
+                <div class="ing-content">
+                  <h3>Normal Drinks</h3>
+
+                  <img src="images/normaldrinks.png" alt="Cocacola Drinks" />
+                  <div class="pq-content">
+                    <span class="price">$1.00</span>
+                  </div>
+                </div>
+                <div class="description">
+                  <h4>Description</h4>
+                  <p>All the normal drinks are available</p>
+                </div>
+              </div>
+              <!-- third item ends -->
+            </div>
+          </div>
+          <!-- Drinks ends Here -->
+          <!-- Deserts start Here -->
+          <div class="food-wrapper">
+            <div class="type-of-food">
+              <h2>Deserts</h2>
+              <button id="toggleBtn7">
+                <i class="fa fa-angle-up"></i>
+              </button>
+            </div>
+            <div class="foods" id="foods7">
+              <div class="face">
+                <div class="top-content">
+                  <img src="images/heart.png" alt="Heart" class="top-icons" />
+                </div>
+                <div class="ing-content">
+                  <h3>Dutch Apple Pie</h3>
+
+                  <img src="images/applepie.png" alt="Apple Pie" />
+                  <div class="pq-content">
+                    <span class="price">$5.00</span>
+                  </div>
+                </div>
+                <div class="description">
+                  <h4>Description</h4>
+                  <p>A slice of our homemade apple pie</p>
+                </div>
+              </div>
+              <!-- Second Item -->
+              <div class="face">
+                <div class="top-content">
+                  <img src="images/heart.png" alt="Heart" class="top-icons" />
+                </div>
+                <div class="ing-content">
+                  <h3>Chocolate Cake</h3>
+
+                  <img src="images/chocolatecake.png" alt="chocolate cake" />
+                  <div class="pq-content">
+                    <span class="price">$6.00</span>
+                  </div>
+                </div>
+                <div class="description">
+                  <h4>Description</h4>
+                  <p>A slice of our rich three layer chocolate cake.</p>
+                </div>
+              </div>
+              <!-- third item -->
+              <div class="face">
+                <div class="top-content">
+                  <img src="images/heart.png" alt="Heart" class="top-icons" />
+                </div>
+                <div class="ing-content">
+                  <h3>Key Lime Pie</h3>
+
+                  <img src="images/lemonpie.png" alt="Lemon pie" />
+                  <div class="pq-content">
+                    <span class="price">$4.00</span>
+                  </div>
+                </div>
+                <div class="description">
+                  <h4>Description</h4>
+                  <p>
+                    Tart and delicious key lime pie, topped with fresh whipped
+                    cream
+                  </p>
+                </div>
+              </div>
+              <!-- third item ends -->
+            </div>
+          </div>
+          <!-- Deserts ends Here -->
+        </div>
+      </section>
+      <section class="indian-food">
+        <div class="menu-heading-div">
+          <h1>Indian Food</h1>
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/pakora.jpg" alt="bhajji" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/samosa.jpg" alt="samosa" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/vadapav.jpg" alt="vadapav" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/poori.jpg" alt="poori" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/paratha.jpg" alt="Paratha" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/roti.jpg" alt="rooti" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/alooparatha.jpg" alt="paratha" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/tikkamasala.jpg" alt="tikka masala" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/chanamasala.jpg" alt="Chana Masala" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/korma.jpg" alt="Chicken Korma" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/korma2.jpg" alt="Chicken Korma" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/dal.jpg" alt="Indian dal" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/biryani1.jpg" alt="Biryani" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/biryani2.jpg" alt="Biryani" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/tea.jpg" alt="Tea" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/lassi.jpg" alt="Lassi" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/cofffe.jpg" alt="coffee" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/gulabjamun.jpg" alt="Gulab Jamun" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/rasgulla.jpg" alt="rasgulla" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/jalebi.jpg" alt="jalebi" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/sweets.jpg" alt="Sweets" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/sweets2.jpg" alt="Sweets" />
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer-content">
+          <p class="copyright">
+            Copyright &copy; 2020,Hungry Hunter - All Rights Reserved
+          </p>
+          <div class="social-list">
+            <a href="#"><i class="fa fa-facebook-f ficon"></i></a>
+            <a href="#"><i class="fa fa-instagram ficon"></i></a>
+            <a href="#"><i class="fa fa-twitter ficon"></i></a>
+          </div>
+        </div>
+      </footer>
+      <a
+        href="#"
+        class="scroll-btn animate__animated animate__shakeY animate__infinite infinite animate__slow 1s"
+      >
+        <i class="fa fa-arrow-up"></i>
+      </a>
+    </div>
+    <script src="js/menu.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 20,
+          stretch: 0,
+          depth: 200,
+          modifier: 1,
+          slideShadows: true,
+        },
+        loop: true,
+        autoplay: {
+          delay: 500,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+  </body>
+</html>
